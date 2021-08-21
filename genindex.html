@@ -135,6 +135,7 @@
 <li class="toctree-l1"><a class="reference internal" href="_gen/espnet2.iterators.html">espnet2.iterators package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_gen/espnet2.lm.html">espnet2.lm package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_gen/espnet2.schedulers.html">espnet2.schedulers package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_gen/espnet2.gan_tts.html">espnet2.gan_tts package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_gen/espnet2.torch_utils.html">espnet2.torch_utils package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_gen/espnet2.enh.html">espnet2.enh package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_gen/espnet2.optimizers.html">espnet2.optimizers package</a></li>
@@ -279,6 +280,8 @@
       <li><a href="_gen/espnet2.lm.html#espnet2.lm.abs_model.AbsLM">AbsLM (class in espnet2.lm.abs_model)</a>
 </li>
       <li><a href="_gen/espnet2.layers.html#espnet2.layers.abs_normalize.AbsNormalize">AbsNormalize (class in espnet2.layers.abs_normalize)</a>
+</li>
+      <li><a href="_gen/espnet2.asr.html#espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder">AbsPostEncoder (class in espnet2.asr.postencoder.abs_postencoder)</a>
 </li>
       <li><a href="_gen/espnet2.asr.html#espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder">AbsPreEncoder (class in espnet2.asr.preencoder.abs_preencoder)</a>
 </li>
@@ -426,8 +429,6 @@
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transducer.arguments.add_auxiliary_task_arguments">add_auxiliary_task_arguments() (in module espnet.nets.pytorch_backend.transducer.arguments)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.e2e_asr_conformer.E2E.add_conformer_arguments">add_conformer_arguments() (espnet.nets.pytorch_backend.e2e_asr_conformer.E2E static method)</a>
 
       <ul>
@@ -436,6 +437,8 @@
       </ul></li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transducer.arguments.add_custom_decoder_arguments">add_custom_decoder_arguments() (in module espnet.nets.pytorch_backend.transducer.arguments)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transducer.arguments.add_custom_encoder_arguments">add_custom_encoder_arguments() (in module espnet.nets.pytorch_backend.transducer.arguments)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transducer.arguments.add_custom_training_arguments">add_custom_training_arguments() (in module espnet.nets.pytorch_backend.transducer.arguments)</a>
@@ -510,6 +513,22 @@
 </li>
       <li><a href="_gen/espnet.utils.html#espnet.utils.spec_augment.apply_interpolation">apply_interpolation() (in module espnet.utils.spec_augment)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANPeriodDiscriminator.apply_spectral_norm">apply_spectral_norm() (espnet2.gan_tts.vits.hifigan.HiFiGANPeriodDiscriminator method)</a>
+
+      <ul>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANScaleDiscriminator.apply_spectral_norm">(espnet2.gan_tts.vits.hifigan.HiFiGANScaleDiscriminator method)</a>
+</li>
+      </ul></li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANGenerator.apply_weight_norm">apply_weight_norm() (espnet2.gan_tts.vits.hifigan.HiFiGANGenerator method)</a>
+
+      <ul>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANPeriodDiscriminator.apply_weight_norm">(espnet2.gan_tts.vits.hifigan.HiFiGANPeriodDiscriminator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANScaleDiscriminator.apply_weight_norm">(espnet2.gan_tts.vits.hifigan.HiFiGANScaleDiscriminator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.wavenet.WaveNet.apply_weight_norm">(espnet2.gan_tts.vits.wavenet.WaveNet method)</a>
+</li>
+      </ul></li>
       <li><a href="_gen/espnet2.main_funcs.html#espnet2.main_funcs.pack_funcs.Archiver">Archiver (class in espnet2.main_funcs.pack_funcs)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.ctc.WarpCTC.argmax">argmax() (espnet.nets.chainer_backend.ctc.WarpCTC method)</a>
@@ -1058,10 +1077,10 @@
       </ul></li>
       <li><a href="_gen/espnet2.main_funcs.html#espnet2.main_funcs.collect_stats.collect_stats">collect_stats() (in module espnet2.main_funcs.collect_stats)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet2.train.html#espnet2.train.collate_fn.common_collate_fn">common_collate_fn() (in module espnet2.train.collate_fn)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet2.train.html#espnet2.train.collate_fn.CommonCollateFn">CommonCollateFn (class in espnet2.train.collate_fn)</a>
 </li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.preprocessor.CommonPreprocessor">CommonPreprocessor (class in espnet2.train.preprocessor)</a>
@@ -1102,6 +1121,10 @@
 </li>
       <li><a href="_gen/espnet2.asr.html#espnet2.asr.encoder.contextual_block_transformer_encoder.ContextualBlockTransformerEncoder">ContextualBlockTransformerEncoder (class in espnet2.asr.encoder.contextual_block_transformer_encoder)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_block.Conv1d">Conv1d (class in espnet2.gan_tts.vits.residual_block)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_block.Conv1d1x1">Conv1d1x1 (class in espnet2.gan_tts.vits.residual_block)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transformer.multi_layer_conv.Conv1dLinear">Conv1dLinear (class in espnet.nets.pytorch_backend.transformer.multi_layer_conv)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.transformer.subsampling.Conv2dSubsampling">Conv2dSubsampling (class in espnet.nets.chainer_backend.transformer.subsampling)</a>
@@ -1134,6 +1157,8 @@
         <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transducer.error_calculator.ErrorCalculator.convert_to_char">(espnet.nets.pytorch_backend.transducer.error_calculator.ErrorCalculator method)</a>
 </li>
       </ul></li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.ConvFlow">ConvFlow (class in espnet2.gan_tts.vits.flow)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.conformer.convolution.ConvolutionModule">ConvolutionModule (class in espnet.nets.pytorch_backend.conformer.convolution)</a>
 </li>
       <li><a href="_gen/espnet.lm.html#espnet.lm.lm_utils.count_tokens">count_tokens() (in module espnet.lm.lm_utils)</a>
@@ -1366,11 +1391,15 @@
 </li>
       <li><a href="_gen/espnet2.tasks.html#espnet2.tasks.diar.DiarizationTask">DiarizationTask (class in espnet2.tasks.diar)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet2.bin.html#espnet2.bin.diar_inference.DiarizeSpeech">DiarizeSpeech (class in espnet2.bin.diar_inference)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.DilatedDepthSeparableConv">DilatedDepthSeparableConv (class in espnet2.gan_tts.vits.flow)</a>
+</li>
       <li><a href="_gen/espnet2.tts.html#espnet2.tts.feats_extract.dio.Dio">Dio (class in espnet2.tts.feats_extract.dio)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.DiscriminatorAdversarialLoss">DiscriminatorAdversarialLoss (class in espnet2.gan_tts.vits.loss)</a>
 </li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.distributed_utils.DistributedOption.dist_backend">dist_backend (espnet2.train.distributed_utils.DistributedOption attribute)</a>
 </li>
@@ -1488,6 +1517,8 @@
         <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.e2e_st_transformer.E2E">(class in espnet.nets.pytorch_backend.e2e_st_transformer)</a>
 </li>
       </ul></li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.ElementwiseAffineFlow">ElementwiseAffineFlow (class in espnet2.gan_tts.vits.flow)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.deterministic_embed_id.embed_id">embed_id() (in module espnet.nets.chainer_backend.deterministic_embed_id)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.deterministic_embed_id.EmbedID">EmbedID (class in espnet.nets.chainer_backend.deterministic_embed_id)</a>
@@ -1996,8 +2027,6 @@
 </li>
       <li><a href="_gen/espnet.scheduler.html#module-espnet.scheduler.scheduler">espnet.scheduler.scheduler (module)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.st.html#module-espnet.st.__init__">espnet.st.__init__ (module)</a>
 </li>
       <li><a href="_gen/espnet.st.html#module-espnet.st.pytorch_backend.__init__">espnet.st.pytorch_backend.__init__ (module)</a>
@@ -2014,6 +2043,8 @@
 </li>
       <li><a href="_gen/espnet.transform.html#module-espnet.transform.functional">espnet.transform.functional (module)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.transform.html#module-espnet.transform.perturb">espnet.transform.perturb (module)</a>
 </li>
       <li><a href="_gen/espnet.transform.html#module-espnet.transform.spec_augment">espnet.transform.spec_augment (module)</a>
@@ -2107,6 +2138,12 @@
       <li><a href="_gen/espnet2.asr.html#module-espnet2.asr.frontend.s3prl">espnet2.asr.frontend.s3prl (module)</a>
 </li>
       <li><a href="_gen/espnet2.asr.html#module-espnet2.asr.frontend.windowing">espnet2.asr.frontend.windowing (module)</a>
+</li>
+      <li><a href="_gen/espnet2.asr.html#module-espnet2.asr.postencoder.__init__">espnet2.asr.postencoder.__init__ (module)</a>
+</li>
+      <li><a href="_gen/espnet2.asr.html#module-espnet2.asr.postencoder.abs_postencoder">espnet2.asr.postencoder.abs_postencoder (module)</a>
+</li>
+      <li><a href="_gen/espnet2.asr.html#module-espnet2.asr.postencoder.hugging_face_transformers_postencoder">espnet2.asr.postencoder.hugging_face_transformers_postencoder (module)</a>
 </li>
       <li><a href="_gen/espnet2.asr.html#module-espnet2.asr.preencoder.__init__">espnet2.asr.preencoder.__init__ (module)</a>
 </li>
@@ -2245,6 +2282,34 @@
       <li><a href="_gen/espnet2.fileio.html#module-espnet2.fileio.rttm">espnet2.fileio.rttm (module)</a>
 </li>
       <li><a href="_gen/espnet2.fileio.html#module-espnet2.fileio.sound_scp">espnet2.fileio.sound_scp (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.__init__">espnet2.gan_tts.__init__ (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.__init__">espnet2.gan_tts.vits.__init__ (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.duration_predictor">espnet2.gan_tts.vits.duration_predictor (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.flow">espnet2.gan_tts.vits.flow (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.generator">espnet2.gan_tts.vits.generator (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.hifigan">espnet2.gan_tts.vits.hifigan (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.loss">espnet2.gan_tts.vits.loss (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.monotonic_align.__init__">espnet2.gan_tts.vits.monotonic_align.__init__ (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.posterior_encoder">espnet2.gan_tts.vits.posterior_encoder (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.residual_block">espnet2.gan_tts.vits.residual_block (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.residual_coupling">espnet2.gan_tts.vits.residual_coupling (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.text_encoder">espnet2.gan_tts.vits.text_encoder (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.transform">espnet2.gan_tts.vits.transform (module)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#module-espnet2.gan_tts.vits.wavenet">espnet2.gan_tts.vits.wavenet (module)</a>
 </li>
       <li><a href="_gen/espnet2.iterators.html#module-espnet2.iterators.__init__">espnet2.iterators.__init__ (module)</a>
 </li>
@@ -2546,6 +2611,8 @@
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.frontends.feature_transform.feature_transform_for">feature_transform_for() (in module espnet.nets.pytorch_backend.frontends.feature_transform)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.FeatureMatchLoss">FeatureMatchLoss (class in espnet2.gan_tts.vits.loss)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.frontends.feature_transform.FeatureTransform">FeatureTransform (class in espnet.nets.pytorch_backend.frontends.feature_transform)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.e2e_tts_fastspeech.FeedForwardTransformer">FeedForwardTransformer (class in espnet.nets.pytorch_backend.e2e_tts_fastspeech)</a>
@@ -2605,6 +2672,8 @@
       <li><a href="_gen/espnet2.train.html#espnet2.train.reporter.SubReporter.finished">finished() (espnet2.train.reporter.SubReporter method)</a>
 </li>
       <li><a href="_gen/espnet.utils.html#espnet.utils.spec_augment.flatten_grid_locations">flatten_grid_locations() (in module espnet.utils.spec_augment)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.FlipFlow">FlipFlow (class in espnet2.gan_tts.vits.flow)</a>
 </li>
       <li><a href="_gen/espnet2.utils.html#espnet2.utils.types.float_or_none">float_or_none() (in module espnet2.utils.types)</a>
 </li>
@@ -2927,6 +2996,10 @@
 </li>
         <li><a href="_gen/espnet2.asr.html#espnet2.asr.frontend.windowing.SlidingWindow.forward">(espnet2.asr.frontend.windowing.SlidingWindow method)</a>
 </li>
+        <li><a href="_gen/espnet2.asr.html#espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder.forward">(espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder method)</a>
+</li>
+        <li><a href="_gen/espnet2.asr.html#espnet2.asr.postencoder.hugging_face_transformers_postencoder.HuggingFaceTransformersPostEncoder.forward">(espnet2.asr.postencoder.hugging_face_transformers_postencoder.HuggingFaceTransformersPostEncoder method)</a>
+</li>
         <li><a href="_gen/espnet2.asr.html#espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder.forward">(espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder method)</a>
 </li>
         <li><a href="_gen/espnet2.asr.html#espnet2.asr.preencoder.linear.LinearProjection.forward">(espnet2.asr.preencoder.linear.LinearProjection method)</a>
@@ -3008,6 +3081,58 @@
         <li><a href="_gen/espnet2.enh.html#espnet2.enh.separator.tcn_separator.TCNSeparator.forward">(espnet2.enh.separator.tcn_separator.TCNSeparator method)</a>
 </li>
         <li><a href="_gen/espnet2.enh.html#espnet2.enh.separator.transformer_separator.TransformerSeparator.forward">(espnet2.enh.separator.transformer_separator.TransformerSeparator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.duration_predictor.StochasticDurationPredictor.forward">(espnet2.gan_tts.vits.duration_predictor.StochasticDurationPredictor method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.ConvFlow.forward">(espnet2.gan_tts.vits.flow.ConvFlow method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.DilatedDepthSeparableConv.forward">(espnet2.gan_tts.vits.flow.DilatedDepthSeparableConv method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.ElementwiseAffineFlow.forward">(espnet2.gan_tts.vits.flow.ElementwiseAffineFlow method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.FlipFlow.forward">(espnet2.gan_tts.vits.flow.FlipFlow method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.LogFlow.forward">(espnet2.gan_tts.vits.flow.LogFlow method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.Transpose.forward">(espnet2.gan_tts.vits.flow.Transpose method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.generator.VITSGenerator.forward">(espnet2.gan_tts.vits.generator.VITSGenerator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANGenerator.forward">(espnet2.gan_tts.vits.hifigan.HiFiGANGenerator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANMultiPeriodDiscriminator.forward">(espnet2.gan_tts.vits.hifigan.HiFiGANMultiPeriodDiscriminator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANMultiScaleDiscriminator.forward">(espnet2.gan_tts.vits.hifigan.HiFiGANMultiScaleDiscriminator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANMultiScaleMultiPeriodDiscriminator.forward">(espnet2.gan_tts.vits.hifigan.HiFiGANMultiScaleMultiPeriodDiscriminator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANPeriodDiscriminator.forward">(espnet2.gan_tts.vits.hifigan.HiFiGANPeriodDiscriminator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANScaleDiscriminator.forward">(espnet2.gan_tts.vits.hifigan.HiFiGANScaleDiscriminator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.DiscriminatorAdversarialLoss.forward">(espnet2.gan_tts.vits.loss.DiscriminatorAdversarialLoss method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.FeatureMatchLoss.forward">(espnet2.gan_tts.vits.loss.FeatureMatchLoss method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.GeneratorAdversarialLoss.forward">(espnet2.gan_tts.vits.loss.GeneratorAdversarialLoss method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.KLDivergenceLoss.forward">(espnet2.gan_tts.vits.loss.KLDivergenceLoss method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.MelSpectrogramLoss.forward">(espnet2.gan_tts.vits.loss.MelSpectrogramLoss method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.posterior_encoder.PosteriorEncoder.forward">(espnet2.gan_tts.vits.posterior_encoder.PosteriorEncoder method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_block.HiFiGANResidualBlock.forward">(espnet2.gan_tts.vits.residual_block.HiFiGANResidualBlock method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_block.WaveNetResidualBlock.forward">(espnet2.gan_tts.vits.residual_block.WaveNetResidualBlock method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_coupling.ResidualAffineCouplingBlock.forward">(espnet2.gan_tts.vits.residual_coupling.ResidualAffineCouplingBlock method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_coupling.ResidualAffineCouplingLayer.forward">(espnet2.gan_tts.vits.residual_coupling.ResidualAffineCouplingLayer method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.text_encoder.TextEncoder.forward">(espnet2.gan_tts.vits.text_encoder.TextEncoder method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.wavenet.WaveNet.forward">(espnet2.gan_tts.vits.wavenet.WaveNet method)</a>
 </li>
         <li><a href="_gen/espnet2.layers.html#espnet2.layers.abs_normalize.AbsNormalize.forward">(espnet2.layers.abs_normalize.AbsNormalize method)</a>
 </li>
@@ -3179,6 +3304,8 @@
 </li>
       </ul></li>
       <li><a href="_gen/espnet2.main_funcs.html#espnet2.main_funcs.pack_funcs.Archiver.generate_info">generate_info() (espnet2.main_funcs.pack_funcs.Archiver method)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.GeneratorAdversarialLoss">GeneratorAdversarialLoss (class in espnet2.gan_tts.vits.loss)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.nets_utils.get_activation">get_activation() (in module espnet.nets.pytorch_backend.nets_utils)</a>
 </li>
@@ -3374,12 +3501,18 @@
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.frontends.beamformer.get_power_spectral_density_matrix">get_power_spectral_density_matrix() (in module espnet.nets.pytorch_backend.frontends.beamformer)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.generator.VITSGenerator.get_random_segments">get_random_segments() (espnet2.gan_tts.vits.generator.VITSGenerator method)</a>
+</li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.distributed_utils.get_rank">get_rank() (in module espnet2.train.distributed_utils)</a>
 </li>
       <li><a href="_gen/espnet2.enh.html#espnet2.enh.layers.beamformer.get_rtf">get_rtf() (in module espnet2.enh.layers.beamformer)</a>
 </li>
       <li><a href="_gen/espnet2.bin.html#espnet2.bin.asr_align.CTCSegmentation.get_segments">get_segments() (espnet2.bin.asr_align.CTCSegmentation static method)</a>
+
+      <ul>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.generator.VITSGenerator.get_segments">(espnet2.gan_tts.vits.generator.VITSGenerator method)</a>
 </li>
+      </ul></li>
       <li><a href="_gen/espnet2.utils.html#espnet2.utils.sized_dict.get_size">get_size() (in module espnet2.utils.sized_dict)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transformer.optimizer.get_std_opt">get_std_opt() (in module espnet.nets.pytorch_backend.transformer.optimizer)</a>
@@ -3472,13 +3605,29 @@
         <li><a href="_gen/espnet2.train.html#espnet2.train.iterable_dataset.IterableESPnetDataset.has_name">(espnet2.train.iterable_dataset.IterableESPnetDataset method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.utils.html#espnet.utils.cli_readers.HDF5Reader">HDF5Reader (class in espnet.utils.cli_readers)</a>
 </li>
       <li><a href="_gen/espnet.utils.html#espnet.utils.cli_writers.HDF5Writer">HDF5Writer (class in espnet.utils.cli_writers)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANGenerator">HiFiGANGenerator (class in espnet2.gan_tts.vits.hifigan)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANMultiPeriodDiscriminator">HiFiGANMultiPeriodDiscriminator (class in espnet2.gan_tts.vits.hifigan)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANMultiScaleDiscriminator">HiFiGANMultiScaleDiscriminator (class in espnet2.gan_tts.vits.hifigan)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANMultiScaleMultiPeriodDiscriminator">HiFiGANMultiScaleMultiPeriodDiscriminator (class in espnet2.gan_tts.vits.hifigan)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANPeriodDiscriminator">HiFiGANPeriodDiscriminator (class in espnet2.gan_tts.vits.hifigan)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_block.HiFiGANResidualBlock">HiFiGANResidualBlock (class in espnet2.gan_tts.vits.residual_block)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANScaleDiscriminator">HiFiGANScaleDiscriminator (class in espnet2.gan_tts.vits.hifigan)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.tacotron2.cbhg.HighwayNet">HighwayNet (class in espnet.nets.pytorch_backend.tacotron2.cbhg)</a>
+</li>
+      <li><a href="_gen/espnet2.asr.html#espnet2.asr.postencoder.hugging_face_transformers_postencoder.HuggingFaceTransformersPostEncoder">HuggingFaceTransformersPostEncoder (class in espnet2.asr.postencoder.hugging_face_transformers_postencoder)</a>
 </li>
       <li><a href="_gen/espnet2.bin.html#espnet2.bin.enh_inference.humanfriendly_or_none">humanfriendly_or_none() (in module espnet2.bin.enh_inference)</a>
 </li>
@@ -3526,6 +3675,8 @@
         <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.tacotron2.encoder.Encoder.inference">(espnet.nets.pytorch_backend.tacotron2.encoder.Encoder method)</a>
 </li>
         <li><a href="_gen/espnet.nets.html#espnet.nets.tts_interface.TTSInterface.inference">(espnet.nets.tts_interface.TTSInterface method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.generator.VITSGenerator.inference">(espnet2.gan_tts.vits.generator.VITSGenerator method)</a>
 </li>
         <li><a href="_gen/espnet2.tts.html#espnet2.tts.abs_tts.AbsTTS.inference">(espnet2.tts.abs_tts.AbsTTS method)</a>
 </li>
@@ -3680,8 +3831,6 @@
 </li>
       <li><a href="_gen/espnet.utils.html#espnet.utils.cli_writers.KaldiWriter">KaldiWriter (class in espnet.utils.cli_writers)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.utils.html#espnet.utils.io_utils.SoundHDF5File.keys">keys() (espnet.utils.io_utils.SoundHDF5File method)</a>
 
       <ul>
@@ -3694,6 +3843,10 @@
         <li><a href="_gen/espnet2.train.html#espnet2.train.dataset.AdapterForSoundScpReader.keys">(espnet2.train.dataset.AdapterForSoundScpReader method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.KLDivergenceLoss">KLDivergenceLoss (class in espnet2.gan_tts.vits.loss)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -3836,6 +3989,8 @@
       </ul></li>
       <li><a href="_gen/espnet2.layers.html#espnet2.layers.sinc_conv.LogCompression">LogCompression (class in espnet2.layers.sinc_conv)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.LogFlow">LogFlow (class in espnet2.gan_tts.vits.flow)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.frontends.feature_transform.LogMel">LogMel (class in espnet.nets.pytorch_backend.frontends.feature_transform)</a>
 
       <ul>
@@ -3954,12 +4109,12 @@
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.transformer.decoder.Decoder.make_attention_mask">make_attention_mask() (espnet.nets.chainer_backend.transformer.decoder.Decoder method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.utils.html#espnet.utils.training.batchfy.make_batchset">make_batchset() (in module espnet.utils.training.batchfy)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.transformer.mask.make_history_mask">make_history_mask() (in module espnet.nets.chainer_backend.transformer.mask)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.lm.html#espnet.lm.lm_utils.make_lexical_tree">make_lexical_tree() (in module espnet.lm.lm_utils)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.nets_utils.make_non_pad_mask">make_non_pad_mask() (in module espnet.nets.pytorch_backend.nets_utils)</a>
@@ -3984,11 +4139,19 @@
       </ul></li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.reporter.Reporter.matplotlib_plot">matplotlib_plot() (espnet2.train.reporter.Reporter method)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.monotonic_align.__init__.maximum_path">maximum_path() (in module espnet2.gan_tts.vits.monotonic_align.__init__)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.monotonic_align.__init__.maximum_path_each_numba">maximum_path_each_numba (in module espnet2.gan_tts.vits.monotonic_align.__init__)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.monotonic_align.__init__.maximum_path_numba">maximum_path_numba (in module espnet2.gan_tts.vits.monotonic_align.__init__)</a>
+</li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.reporter.SubReporter.measure_iter_time">measure_iter_time() (espnet2.train.reporter.SubReporter method)</a>
 </li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.reporter.SubReporter.measure_time">measure_time() (espnet2.train.reporter.SubReporter method)</a>
 </li>
       <li><a href="_gen/espnet2.layers.html#espnet2.layers.sinc_conv.MelScale">MelScale (class in espnet2.layers.sinc_conv)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.loss.MelSpectrogramLoss">MelSpectrogramLoss (class in espnet2.gan_tts.vits.loss)</a>
 </li>
       <li><a href="_gen/espnet2.enh.html#espnet2.enh.layers.dprnn.merge_feature">merge_feature() (in module espnet2.enh.layers.dprnn)</a>
 </li>
@@ -4199,6 +4362,10 @@
 </li>
         <li><a href="_gen/espnet2.asr.html#espnet2.asr.frontend.windowing.SlidingWindow.output_size">(espnet2.asr.frontend.windowing.SlidingWindow method)</a>
 </li>
+        <li><a href="_gen/espnet2.asr.html#espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder.output_size">(espnet2.asr.postencoder.abs_postencoder.AbsPostEncoder method)</a>
+</li>
+        <li><a href="_gen/espnet2.asr.html#espnet2.asr.postencoder.hugging_face_transformers_postencoder.HuggingFaceTransformersPostEncoder.output_size">(espnet2.asr.postencoder.hugging_face_transformers_postencoder.HuggingFaceTransformersPostEncoder method)</a>
+</li>
         <li><a href="_gen/espnet2.asr.html#espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder.output_size">(espnet2.asr.preencoder.abs_preencoder.AbsPreEncoder method)</a>
 </li>
         <li><a href="_gen/espnet2.asr.html#espnet2.asr.preencoder.linear.LinearProjection.output_size">(espnet2.asr.preencoder.linear.LinearProjection method)</a>
@@ -4258,6 +4425,8 @@
 </li>
       <li><a href="_gen/espnet2.text.html#espnet2.text.phoneme_tokenizer.Phonemizer">Phonemizer (class in espnet2.text.phoneme_tokenizer)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.transform.piecewise_rational_quadratic_transform">piecewise_rational_quadratic_transform() (in module espnet2.gan_tts.vits.transform)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.e2e_asr_mix.PIT">PIT (class in espnet.nets.pytorch_backend.e2e_asr_mix)</a>
 </li>
       <li><a href="_gen/espnet2.diar.html#espnet2.diar.espnet_model.ESPnetDiarizationModel.pit_loss">pit_loss() (espnet2.diar.espnet_model.ESPnetDiarizationModel method)</a>
@@ -4308,6 +4477,8 @@
         <li><a href="_gen/espnet.nets.html#espnet.nets.beam_search.BeamSearch.post_process">(espnet.nets.beam_search.BeamSearch method)</a>
 </li>
       </ul></li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.posterior_encoder.PosteriorEncoder">PosteriorEncoder (class in espnet2.gan_tts.vits.posterior_encoder)</a>
+</li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.tacotron2.decoder.Postnet">Postnet (class in espnet.nets.pytorch_backend.tacotron2.decoder)</a>
 </li>
       <li><a href="_gen/espnet.lm.html#espnet.lm.chainer_backend.lm.ClassifierWithState.predict">predict() (espnet.lm.chainer_backend.lm.ClassifierWithState method)</a>
@@ -4362,11 +4533,15 @@
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transformer.optimizer.NoamOpt.rate">rate() (espnet.nets.pytorch_backend.transformer.optimizer.NoamOpt method)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.transform.rational_quadratic_spline">rational_quadratic_spline() (in module espnet2.gan_tts.vits.transform)</a>
+</li>
       <li><a href="_gen/espnet2.iterators.html#espnet2.iterators.sequence_iter_factory.RawSampler">RawSampler (class in espnet2.iterators.sequence_iter_factory)</a>
 </li>
       <li><a href="_gen/espnet2.fileio.html#espnet2.fileio.read_text.read_2column_text">read_2column_text() (in module espnet2.fileio.read_text)</a>
 </li>
       <li><a href="_gen/espnet.lm.html#espnet.lm.lm_utils.read_tokens">read_tokens() (in module espnet.lm.lm_utils)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.wavenet.WaveNet.receptive_field_size">receptive_field_size() (espnet2.gan_tts.vits.wavenet.WaveNet property)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.e2e_asr_mix_transformer.E2E.recog">recog() (espnet.nets.pytorch_backend.e2e_asr_mix_transformer.E2E method)</a>
 
@@ -4449,6 +4624,8 @@
       <ul>
         <li><a href="_gen/espnet2.asr.html#espnet2.asr.frontend.s3prl.S3prlFrontend.reload_pretrained_parameters">(espnet2.asr.frontend.s3prl.S3prlFrontend method)</a>
 </li>
+        <li><a href="_gen/espnet2.asr.html#espnet2.asr.postencoder.hugging_face_transformers_postencoder.HuggingFaceTransformersPostEncoder.reload_pretrained_parameters">(espnet2.asr.postencoder.hugging_face_transformers_postencoder.HuggingFaceTransformersPostEncoder method)</a>
+</li>
       </ul></li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transformer.embedding.RelPositionalEncoding">RelPositionalEncoding (class in espnet.nets.pytorch_backend.transformer.embedding)</a>
 </li>
@@ -4458,6 +4635,12 @@
 </li>
       <li><a href="_gen/espnet2.utils.html#espnet2.utils.types.remove_quotes">remove_quotes() (in module espnet2.utils.types)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANGenerator.remove_weight_norm">remove_weight_norm() (espnet2.gan_tts.vits.hifigan.HiFiGANGenerator method)</a>
+
+      <ul>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.wavenet.WaveNet.remove_weight_norm">(espnet2.gan_tts.vits.wavenet.WaveNet method)</a>
+</li>
+      </ul></li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.nets_utils.rename_state_dict">rename_state_dict() (in module espnet.nets.pytorch_backend.nets_utils)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.transformer.repeat.repeat">repeat() (in module espnet.nets.pytorch_backend.transformer.repeat)</a>
@@ -4573,7 +4756,15 @@
 </li>
         <li><a href="_gen/espnet2.enh.html#espnet2.enh.layers.tcn.GlobalLayerNorm.reset_parameters">(espnet2.enh.layers.tcn.GlobalLayerNorm method)</a>
 </li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.hifigan.HiFiGANGenerator.reset_parameters">(espnet2.gan_tts.vits.hifigan.HiFiGANGenerator method)</a>
+</li>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_block.Conv1d.reset_parameters">(espnet2.gan_tts.vits.residual_block.Conv1d method)</a>
+</li>
       </ul></li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_coupling.ResidualAffineCouplingBlock">ResidualAffineCouplingBlock (class in espnet2.gan_tts.vits.residual_coupling)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_coupling.ResidualAffineCouplingLayer">ResidualAffineCouplingLayer (class in espnet2.gan_tts.vits.residual_coupling)</a>
+</li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.distributed_utils.resolve_distributed_mode">resolve_distributed_mode() (in module espnet2.train.distributed_utils)</a>
 </li>
       <li><a href="_gen/espnet.asr.html#espnet.asr.asr_utils.restore_snapshot">restore_snapshot() (in module espnet.asr.asr_utils)</a>
@@ -4830,10 +5021,10 @@
         <li><a href="_gen/espnet.optimizer.html#espnet.optimizer.pytorch.SGDFactory">(class in espnet.optimizer.pytorch)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.utils.html#espnet.utils.training.iterators.ShufflingEnabler">ShufflingEnabler (class in espnet.utils.training.iterators)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet2.enh.html#espnet2.enh.espnet_model.ESPnetEnhancementModel.si_snr_loss">si_snr_loss() (espnet2.enh.espnet_model.ESPnetEnhancementModel static method)</a>
 </li>
       <li><a href="_gen/espnet2.enh.html#espnet2.enh.espnet_model.ESPnetEnhancementModel.si_snr_loss_zeromean">si_snr_loss_zeromean() (espnet2.enh.espnet_model.ESPnetEnhancementModel static method)</a>
@@ -4982,6 +5173,8 @@
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.st_interface.STInterface">STInterface (class in espnet.nets.st_interface)</a>
 </li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.duration_predictor.StochasticDurationPredictor">StochasticDurationPredictor (class in espnet2.gan_tts.vits.duration_predictor)</a>
+</li>
       <li><a href="_gen/espnet2.utils.html#espnet2.utils.types.str2bool">str2bool() (in module espnet2.utils.types)</a>
 </li>
       <li><a href="_gen/espnet2.utils.html#espnet2.utils.types.str2pair_str">str2pair_str() (in module espnet2.utils.types)</a>
@@ -5075,6 +5268,8 @@
       <li><a href="_gen/espnet2.bin.html#espnet2.bin.asr_align.CTCSegmentation.text_converter">text_converter (espnet2.bin.asr_align.CTCSegmentation attribute)</a>
 </li>
       <li><a href="_gen/espnet2.text.html#espnet2.text.cleaner.TextCleaner">TextCleaner (class in espnet2.text.cleaner)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.text_encoder.TextEncoder">TextEncoder (class in espnet2.gan_tts.vits.text_encoder)</a>
 </li>
       <li><a href="_gen/espnet2.enh.html#espnet2.enh.espnet_model.ESPnetEnhancementModel.tf_l1_loss">tf_l1_loss() (espnet2.enh.espnet_model.ESPnetEnhancementModel static method)</a>
 </li>
@@ -5268,6 +5463,8 @@
         <li><a href="_gen/espnet.nets.html#espnet.nets.st_interface.STInterface.translate_batch">(espnet.nets.st_interface.STInterface method)</a>
 </li>
       </ul></li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.flow.Transpose">Transpose (class in espnet2.gan_tts.vits.flow)</a>
+</li>
       <li><a href="_gen/espnet.asr.html#espnet.asr.asr_utils.PlotAttentionReport.trim_attention_weight">trim_attention_weight() (espnet.asr.asr_utils.PlotAttentionReport method)</a>
 </li>
       <li><a href="_gen/espnet.asr.html#espnet.asr.asr_utils.PlotCTCReport.trim_ctc_prob">trim_ctc_prob() (espnet.asr.asr_utils.PlotCTCReport method)</a>
@@ -5287,6 +5484,8 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.nets.html#espnet.nets.batch_beam_search.BatchBeamSearch.unbatchfy">unbatchfy() (espnet.nets.batch_beam_search.BatchBeamSearch method)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.transform.unconstrained_rational_quadratic_spline">unconstrained_rational_quadratic_spline() (in module espnet2.gan_tts.vits.transform)</a>
 </li>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.initialization.uniform_init_parameters">uniform_init_parameters() (in module espnet.nets.pytorch_backend.initialization)</a>
 </li>
@@ -5372,10 +5571,10 @@
 </li>
       <li><a href="_gen/espnet2.enh.html#espnet2.enh.layers.beamformer.vector_to_Hermitian">vector_to_Hermitian() (in module espnet2.enh.layers.beamformer)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.conformer.argument.verify_rel_pos_type">verify_rel_pos_type() (in module espnet.nets.pytorch_backend.conformer.argument)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.rnn.encoders.VGG2L">VGG2L (class in espnet.nets.chainer_backend.rnn.encoders)</a>
 
       <ul>
@@ -5387,6 +5586,8 @@
 </li>
       </ul></li>
       <li><a href="_gen/espnet2.asr.html#espnet2.asr.encoder.vgg_rnn_encoder.VGGRNNEncoder">VGGRNNEncoder (class in espnet2.asr.encoder.vgg_rnn_encoder)</a>
+</li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.generator.VITSGenerator">VITSGenerator (class in espnet2.gan_tts.vits.generator)</a>
 </li>
       <li><a href="_gen/espnet.transform.html#espnet.transform.perturb.VolumePerturbation">VolumePerturbation (class in espnet.transform.perturb)</a>
 </li>
@@ -5410,15 +5611,21 @@
 </li>
       <li><a href="_gen/espnet2.bin.html#espnet2.bin.asr_align.CTCSegmentation.warned_about_misconfiguration">warned_about_misconfiguration (espnet2.bin.asr_align.CTCSegmentation attribute)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.ctc.WarpCTC">WarpCTC (class in espnet.nets.chainer_backend.ctc)</a>
 
       <ul>
         <li><a href="_gen/espnet.nets.html#espnet.nets.chainer_backend.transformer.ctc.WarpCTC">(class in espnet.nets.chainer_backend.transformer.ctc)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_gen/espnet.nets.html#espnet.nets.pytorch_backend.wavenet.WaveNet">WaveNet (class in espnet.nets.pytorch_backend.wavenet)</a>
+
+      <ul>
+        <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.wavenet.WaveNet">(class in espnet2.gan_tts.vits.wavenet)</a>
+</li>
+      </ul></li>
+      <li><a href="_gen/espnet2.gan_tts.html#espnet2.gan_tts.vits.residual_block.WaveNetResidualBlock">WaveNetResidualBlock (class in espnet2.gan_tts.vits.residual_block)</a>
 </li>
       <li><a href="_gen/espnet2.train.html#espnet2.train.reporter.WeightedAverage">WeightedAverage (class in espnet2.train.reporter)</a>
 </li>
